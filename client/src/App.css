@@ -1,0 +1,17 @@
+.portal-container {
+  display: flex;
+  padding-top: var(--nav-height);
+  min-height: 100vh;
+}
+
+.portal-main {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  min-height: calc(100vh - var(--nav-height));
+}
+
+@media (max-width: 768px) {
+  .portal-main {
+    margin-left: 0;
+  }
+}
