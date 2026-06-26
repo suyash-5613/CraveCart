@@ -52,12 +52,22 @@ Follow these steps to run the application locally on your machine.
    MONGO_URI=mongodb://127.0.0.1:27017/cravecart
    JWT_SECRET=cravecart_super_secret_key_2024
    JWT_EXPIRE=7d
+   DEFAULT_ADMIN_EMAIL=admin@cravecart.com
+   DEFAULT_ADMIN_PASSWORD=admin123
+   DEFAULT_ADMIN_NAME=Admin
+   DEFAULT_ADMIN_PHONE=9999999999
    ```
 4. Start the backend development server:
    ```bash
    npm run dev
    ```
    *The server should now be running on `http://localhost:5000`.*
+
+   On startup, the backend ensures a default admin account exists. You can log in with:
+   - Email: `admin@cravecart.com`
+   - Password: `admin123`
+
+   If you want different credentials, update the `DEFAULT_ADMIN_*` values in `.env`.
 
 ### 3. Frontend Setup
 1. Open a **new** terminal window and navigate to the client directory:
